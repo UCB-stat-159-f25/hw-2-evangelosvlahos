@@ -1,12 +1,31 @@
 First query to Gemini: 
-How to check the version of Python that the LIGO notebook is using. 
+How to check the version of Python that the LIGO notebook is using
+OUTPUT: 
+    import sys
+    print(sys.version)
 
 Second query to Gemini:
 How to add a python version number to an environment.yml file
+OUTPUT: 
+    name: my_env
+    channels:
+      - defaults
+    dependencies:
+      - python=3.9
+      - numpy
+      - pandas
 
 Third query to Gemini:
 How to install ipykernel
+OUTPUT:
+    conda install ipykernel
 
-Fourth query to Gemini: 
+Fourth query to Gemini:
+How do I install a specific version of a Python package in conda
+OUTPUT:
+    conda install numpy=2.2
+
+Fifth query to Gemini: 
 How to register an environment in Jupyter Notebook
-python -m ipykernel install --user --name ligo --display-name "Ligo Environment"
+OUTPUT:
+    python -m ipykernel install --user --name ligo --display-name "Ligo Environment"
