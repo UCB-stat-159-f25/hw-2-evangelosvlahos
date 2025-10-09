@@ -1,1 +1,12 @@
-No AI tools used in this assignment. EV
+First query to Gemini: 
+How to check the version of Python that the LIGO notebook is using. 
+
+Second query to Gemini:
+How to add a python version number to an environment.yml file
+
+Third query to Gemini:
+How to install ipykernel
+
+Fourth query to Gemini: 
+How to register an environment in Jupyter Notebook
+python -m ipykernel install --user --name ligo --display-name "Ligo Environment"
